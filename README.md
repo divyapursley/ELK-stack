@@ -1,2 +1,2 @@
-# ELK-stack
-ansible YAML
+# ELK-project
+Ansible and Linux scripts
