@@ -109,14 +109,15 @@ The playbook implements the following tasks:
      - You must add the list of machines Ansible can discover and connect.
      `ansible_python_interpreter=/usr/bin/python3`
 
-      - The`hosts` text file should be like this: 
+      - The`hosts` text file should be like this:
+      
 	`# /etc/ansible/hosts
-	[webservers]
-	10.0.0.4 ansible_python_interpreter=/usr/bin/python3
-	10.0.0.5 ansible_python_interpreter=/usr/bin/python3
-        10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+	`[webservers]
+	`10.0.0.4 ansible_python_interpreter=/usr/bin/python3
+	`10.0.0.5 ansible_python_interpreter=/usr/bin/python3
+       ` 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
 ​
-	[elk]
+	`[elk]
 	10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 	 
   
