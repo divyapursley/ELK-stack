@@ -50,7 +50,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jump box host machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
 Jumpbox can be access via SSH Port 22 from personal IP:
-- 89.187.187.162
+<br />- 89.187.187.162
 
 Elk Stack Server is accessible via Port 5601 uaind the host machine IP:
 - 89.187.187.162
@@ -110,16 +110,14 @@ The playbook implements the following tasks:
      `ansible_python_interpreter=/usr/bin/python3`
 
       - The`hosts` text file should be like this:
-      
-  `# /etc/ansible/hosts
-	
-  `[webservers]
-  `10.0.0.4 ansible_python_interpreter=/usr/bin/python3
-	`10.0.0.5 ansible_python_interpreter=/usr/bin/python3
-       ` 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+  <br />`# /etc/ansible/hosts
+  <br />`[webservers]
+ <br /> `10.0.0.4 ansible_python_interpreter=/usr/bin/python3
+<br />`10.0.0.5 ansible_python_interpreter=/usr/bin/python3
+   <br />    ` 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
 ​
-	`[elk]
-	10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+	<br />`[elk]
+	<br />10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 	 
   
   - Edit the inventory file `nano /etc/ansible/hosts`.
