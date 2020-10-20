@@ -29,10 +29,10 @@ What aspect of security do load balancers protect? What is the advantage of a ju
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the host and system configurations.
 
 -What does Filebeat watch for?
--It helps you keep the simple things simple by offering a lightweight way to forward and centralize logs and files.
+<br />-It helps you keep the simple things simple by offering a lightweight way to forward and centralize logs and files.
 
 -What does Metricbeat record?
--It is a lightweight way to send system and service statistics. And also collect metrics from your systems and services such as uptime. 
+<br />-It is a lightweight way to send system and service statistics. And also collect metrics from your systems and services such as uptime. 
 
 The configuration details of each machine may be found below.
 
