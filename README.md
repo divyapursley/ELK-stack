@@ -110,7 +110,7 @@ The playbook implements the following tasks:
      `ansible_python_interpreter=/usr/bin/python3`
 
       - The`hosts` text file should be like this: 
-	# /etc/ansible/hosts
+	`# /etc/ansible/hosts
 	[webservers]
 	10.0.0.4 ansible_python_interpreter=/usr/bin/python3
 	10.0.0.5 ansible_python_interpreter=/usr/bin/python3
