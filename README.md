@@ -111,13 +111,13 @@ The playbook implements the following tasks:
 
       - The`hosts` text file should be like this:
   <br />`# /etc/ansible/hosts`
-  <br />  [webservers]
- <br /> 10.0.0.4 ansible_python_interpreter=/usr/bin/python3
-<br /> 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
-<br /> 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+  <br />  `[webservers]`
+ <br /> `10.0.0.4 ansible_python_interpreter=/usr/bin/python3`
+<br /> `10.0.0.5 ansible_python_interpreter=/usr/bin/python3`
+<br />` 10.0.0.6 ansible_python_interpreter=/usr/bin/python3`
 ​
-<br />[elk]
-<br />10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+<br />`[elk]`
+<br />`10.1.0.4 ansible_python_interpreter=/usr/bin/python3`
 	 
   
   - Edit the inventory file `nano /etc/ansible/hosts`.
@@ -180,7 +180,7 @@ SSH into the control node and follow the steps below:
    - `ssh divya@10.1.0.4`
    - sudo `docker container list -a`
    - Start the docker using `sudo docker start (container name)`
-     ex. `sudo docker start busy_nobel`
+     <br /> ex. `sudo docker start busy_nobel`
    - Get a shell in your container using `sudo docker attach busy_nobel`
    - Create the YAML playbook file to use for configuration `nano /etc/ansible/myfirstplaybook.yml`
    - Install `docker.io` and `python3-pip`
