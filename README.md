@@ -110,15 +110,14 @@ The playbook implements the following tasks:
      `ansible_python_interpreter=/usr/bin/python3`
 
       - The`hosts` text file should be like this:
-  <br />`# /etc/ansible/hosts
-  
-      `[webservers]<br />
- <br /> `10.0.0.4 ansible_python_interpreter=/usr/bin/python3
-<br />`10.0.0.5 ansible_python_interpreter=/usr/bin/python3
-   <br />    ` 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+  <br />`# /etc/ansible/hosts`
+  <br />  [webservers]
+ <br /> 10.0.0.4 ansible_python_interpreter=/usr/bin/python3
+<br /> 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
+<br /> 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
 ​
-	<br />`[elk]
-	<br />10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+<br />[elk]
+<br />10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 	 
   
   - Edit the inventory file `nano /etc/ansible/hosts`.
