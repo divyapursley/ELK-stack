@@ -110,13 +110,12 @@ The playbook implements the following tasks:
      `ansible_python_interpreter=/usr/bin/python3`
 
       - The`hosts` text file should be like this: 
-         
-        ```
+       ```
 	# /etc/ansible/hosts
 	[webservers]
 	10.0.0.4 ansible_python_interpreter=/usr/bin/python3
 	10.0.0.5 ansible_python_interpreter=/usr/bin/python3
-  10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+        10.0.0.6 ansible_python_interpreter=/usr/bin/python3
 ​
 	[elk]
 	10.1.0.4 ansible_python_interpreter=/usr/bin/python3
@@ -136,6 +135,9 @@ The playbook implements the following tasks:
     
 5. Launch (elk-docker) and start the Elk server
 
+
+
+For Documentations:
 Azure vNet Documentation
 `https://portal.azure.com/#@khiatanidivyafgmail.onmicrosoft.com/resource/subscriptions/8bd35161-7bc9-4784-b6e8-fa83d994f4dd/resourceGroups/Cybersecurity/providers/Microsoft.Network/virtualNetworks/Elk-Net/overview`
 
