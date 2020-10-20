@@ -80,11 +80,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 What is the main advantage of automating configuration with Ansible?
 - Ansible can with platform, configuration management, application deployment, intra-service orchestration and provisioning. 
 
-1.It can manage the infrastructure, networks, operating systems and services that you are already using.
-2.No extra software on your servers means more resources for your applications.
-3.Ansible provides Orchestration in the sense of aligning the business request with the applications, data, and infrastructure.
-4.Ansible has powerful features that can enable you to model even the most complex IT workflows.
-5.Ansible uses a simple syntax written in YAML, called playbooks.
+<br />1.It can manage the infrastructure, networks, operating systems and services that you are already using.
+<br />2.No extra software on your servers means more resources for your applications.
+<br />3.Ansible provides Orchestration in the sense of aligning the business request with the applications, data, and infrastructure.
+<br />4.Ansible has powerful features that can enable you to model even the most complex IT workflows.
+<br />5.Ansible uses a simple syntax written in YAML, called playbooks.
 
 
 The playbook implements the following tasks:
@@ -111,7 +111,7 @@ The playbook implements the following tasks:
 
       - The`hosts` text file should be like this:
   <br />`# /etc/ansible/hosts
-  <br />`[webservers]
+  <br />`[webservers]<br />
  <br /> `10.0.0.4 ansible_python_interpreter=/usr/bin/python3
 <br />`10.0.0.5 ansible_python_interpreter=/usr/bin/python3
    <br />    ` 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
