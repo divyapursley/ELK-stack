@@ -149,7 +149,7 @@ Ansible modulels
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![C:\Users\Divya\Desktop\README\diagram](diagram/elk-docker ps.png)
+!https://github.com/divyapursley/ELK-stack/blob/main/diagram/elk-docker%20ps.png (diagram/elk-docker ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
