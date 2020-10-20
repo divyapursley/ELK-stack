@@ -111,7 +111,8 @@ The playbook implements the following tasks:
 
       - The`hosts` text file should be like this:
   <br />`# /etc/ansible/hosts
-  <br />`[webservers]<br />
+  
+      `[webservers]<br />
  <br /> `10.0.0.4 ansible_python_interpreter=/usr/bin/python3
 <br />`10.0.0.5 ansible_python_interpreter=/usr/bin/python3
    <br />    ` 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
