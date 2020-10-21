@@ -56,7 +56,7 @@ Elk Stack Server is accessible via Port 5601 uaind the host machine IP:
 - 89.187.187.162
 
 Elk Stack Server can be reachd only via SSH from jumpbox using private IP:
-- SSH divya@10.0.0.4
+- ssh divya@10.0.0.4
 
 Machines within the network can only be accessed by:
 Which machine did you allow to access your ELK VM? What was its IP address?
@@ -86,6 +86,7 @@ What is the main advantage of automating configuration with Ansible?
 <br />4.Ansible has powerful features that can enable you to model even the most complex IT workflows.
 <br />5.Ansible uses a simple syntax written in YAML, called playbooks.
 
+!https://github.com/divyapursley/ELK-stack/blob/main/ansible/ELK/elk-server.confg (/ansible/elk-server.conf)
 
 The playbook implements the following tasks:
 - In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
@@ -147,7 +148,7 @@ Ansible modulels
 `https://docs.ansible.com/ansible/latest/modules/sysctl_module.html`
 
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+**The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 !https://github.com/divyapursley/ELK-stack/blob/main/diagram/elk-docker%20ps.png (diagram/elk-docker ps.png)
 
@@ -187,12 +188,19 @@ SSH into the control node and follow the steps below:
    - Then run the playbook using `ansible-playbook /etc/ansible/myfirstplaybook.yml`
    - Test DVWA by running on th new VM, SSH to the new VM
    - Run `curl localhost/setup.php` to test the connection  
+   
+   !https://github.com/divyapursley/ELK-stack/blob/main/ansible/Metricbeat/metricbeat-playbook.yml.txt (metricbeat/metricbeat-playbook.yml)
+   !https://github.com/divyapursley/ELK-stack/blob/main/ansible/Filebeat/filebeat-playbook.yml (filebeat/filebeat-playbook.yml)
+   !https://github.com/divyapursley/ELK-stack/blob/main/ansible/ELK/Elk%20server-playbook.txt (ELK/Elk%20server-playbook.txt)
 
 - Answer the following questions to fill in the blanks:
 - Which file is the playbook? Where do you copy it?
     - `/etc/ansible/files`
     - `/etc/ansible/files/filebeat-config.yml`
     - `/etc/ansible/files/metricbeat-config.yml`
+    
+    !https://github.com/divyapursley/ELK-stack/blob/main/ansible/Filebeat/filebeat-config.yml.txt (Filebeat/filebeat-config.yml.txt)
+    !https://github.com/divyapursley/ELK-stack/blob/main/ansible/Metricbeat/metricbeat-config.yml (Metricbeat/metricbeat-confg.yml)
 
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
     - Run `nano/etc/ansible/hosts` and add new IP of the new VM
