@@ -50,7 +50,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jump box host machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
 Jumpbox can be access via SSH Port 22 from personal IP:
-<br />- 89.187.187.162
+- 89.187.187.162
 
 Elk Stack Server is accessible via Port 5601 uaind the host machine IP:
 - 89.187.187.162
@@ -189,9 +189,9 @@ SSH into the control node and follow the steps below:
    - Test DVWA by running on th new VM, SSH to the new VM
    - Run `curl localhost/setup.php` to test the connection  
    
-   !https://github.com/divyapursley/ELK-stack/blob/main/ansible/Metricbeat/metricbeat-playbook.yml.txt (metricbeat/metricbeat-playbook.yml)
-   !https://github.com/divyapursley/ELK-stack/blob/main/ansible/Filebeat/filebeat-playbook.yml (filebeat/filebeat-playbook.yml)
-   !https://github.com/divyapursley/ELK-stack/blob/main/ansible/ELK/Elk%20server-playbook.txt (ELK/Elk%20server-playbook.txt)
+   <br />!https://github.com/divyapursley/ELK-stack/blob/main/ansible/Metricbeat/metricbeat-playbook.yml.txt (metricbeat/metricbeat-playbook.yml)
+   <br />!https://github.com/divyapursley/ELK-stack/blob/main/ansible/Filebeat/filebeat-playbook.yml (filebeat/filebeat-playbook.yml)
+   <br />!https://github.com/divyapursley/ELK-stack/blob/main/ansible/ELK/Elk%20server-playbook.txt (ELK/Elk%20server-playbook.txt)
 
 - Answer the following questions to fill in the blanks:
 - Which file is the playbook? Where do you copy it?
